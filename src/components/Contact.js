@@ -5,6 +5,14 @@ export default function Contact() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
 
+  function encode(data) {
+    return Object.keys(data)
+      .map(
+        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+      )
+      .join("&");
+  }
+
   function handleSubmit(e) {
     e.preventDefault();
     fetch("/", {
@@ -12,14 +20,14 @@ export default function Contact() {
       headers: {
         "Content-Type": "application/x-www-form-urlencoded",
       },
-      body: {
+      body: encode({
         "form-name": "contact",
         name,
         email,
         message,
-      },
+      }),
     })
-      .then((res) => alert("Message sent!"))
+      .then(() => alert("Message sent!"))
       .catch((err) => alert(err));
   }
 
