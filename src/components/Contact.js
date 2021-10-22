@@ -21,7 +21,7 @@ export default function Contact() {
         "Content-Type": "application/x-www-form-urlencoded",
       },
       body: encode({
-        "form-name": "contact",
+        "form-name": "test",
         name,
         email,
         message,
@@ -36,7 +36,7 @@ export default function Contact() {
       <div className="container px-5 py-10 mx-auto flex sm:flex-nowrap flex-wrap">
         <form
           netlify
-          name="contact"
+          name="test"
           onSubmit={handleSubmit}
           className="lg:w-2/3 md:w-1/2 lg:ml-auto lg:mr-auto flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0"
         >
