@@ -1,14 +1,5 @@
 export const projects = [
   {
-    title: "GuildChat",
-    subtitle: "React, PostgreSQL, NestJS",
-    description:
-      "A full-stack messaging app inspired by the Discord web app. Developed in React, NestJS, PostgreSQL, Chakra UI, and CSS Flexbox.",
-    image: "./project-1.png",
-    demoLink: "https://guildchat-app.herokuapp.com/",
-    sourceCodeLink: "https://github.com/nnemtcev/guildchat",
-  },
-  {
     title: "Pokémemory",
     subtitle: "React, MongoDB, Express, CSS3",
     description:
@@ -25,6 +16,15 @@ export const projects = [
     image: "./project-3.png",
     demoLink: "https://videofy.netlify.app/",
     sourceCodeLink: "https://github.com/nnemtcev/videofy",
+  },
+  {
+    title: "GuildChat",
+    subtitle: "React, PostgreSQL, NestJS",
+    description:
+      "A full-stack messaging app inspired by the Discord web app. Developed in React, NestJS, PostgreSQL, Chakra UI, and CSS Flexbox.",
+    image: "./project-1.png",
+    demoLink: "https://github.com/nnemtcev/guildchat",
+    sourceCodeLink: "https://github.com/nnemtcev/guildchat",
   },
 ];
 
